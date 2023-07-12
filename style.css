@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    margin-top: 65px;
+    background: rgb(23,37,42);
+    background: radial-gradient(circle, rgba(23,37,42,1) 0%, rgba(58,175,169,1) 51%, rgba(43,122,120,1) 100%);
+}
+h1{
+    color: #feffff;
+}
+p{
+    color: #17252a;
+}
+
+.btn{
+    background-color: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    color: #feffff;
+    background-color: #2b7a78;
+}
+/* .btn-1{
+    background-color: #2b7a78;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.btn-1:hover{
+    color: #feffff;
+} */
+.row{
+    display: inline-block;
+    width: 100%;
+}
+
+.element{
+    width: 50%;
+    float: left;
+}
+
+.element-content{
+    border: 3px solid #2b7a78;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.img{
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.closing-division{
+    position: absolute;
+    margin: 5px;
+    top: -15px;
+    right: -15px;
+    z-index: 10;
+}
+/* .closing-division2{
+    position: absolute;
+    margin: 5px;
+    top: 5px;
+    right: 5px;
+    z-index: 9;
+} */
+
+.navigation-bar{
+    background-color: #17252a;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.navigation-bar h1{
+    margin: 0;
+}
+
+.icon{
+    background-color: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.icon:hover{
+    color: #feffff;
+    background-color: #2b7a78;
+}
+
+@media screen and (max-width: 1024px){
+    .navigation-bar{
+        padding: 8px;
+        font-size: 18px;
+        transition: all 0.8s ease;
+    }
+}
+@media screen and (max-width: 768px){
+    .navigation-bar{
+        padding: 6px;
+        font-size: 14px;
+        transition: all 0.8s ease;
+    }
+}
+@media screen and (max-width: 480px){
+    .navigation-bar{
+        padding: 4px;
+        font-size: 10px;
+        transition: all 0.8s ease;
+    }
+    .element{
+        width: 100%;
+        float: none;
+        transition: all 0.8s ease-in-out;
+    }
+}
